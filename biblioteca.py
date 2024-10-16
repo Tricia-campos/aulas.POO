@@ -150,5 +150,16 @@ class Ciclista (Atleta):
             print(f"O atleta {self.nome} não pode pedalar porque não aqueceu")
 
 class Triatleta(Ciclista,Corredor,Nadador,Atleta):
-    def __init__(self, aposentado,peso):
-        super().__init__(aposentado,peso)
+    def __init__(self, nome,peso):
+        super().__init__(nome,peso)
+
+def gravar(texto):
+    with open("gravar.txt","a") as arquivo:
+        arquivo.write(texto)
+
+def ler():
+    with open('gravar.txt', 'r') as arquivo2:
+        txt = arquivo2.read()
+        print(txt)
+
+

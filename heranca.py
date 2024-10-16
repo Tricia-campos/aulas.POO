@@ -1,3 +1,9 @@
 from biblioteca import *
 
-at=Atleta(True, 87)
+at=Corredor("Josh",70)
+at.aquecer=False
+at.aposentado= False
+at.correr()
+
+
+
